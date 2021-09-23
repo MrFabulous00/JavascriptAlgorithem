@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      arr = [12, 77, 38, 41, 53, 92, 85];
+      let sum = 0;
+      let min = [];
+
+      for (let i = 0; i <= arr.length - 1; i++) {
+        // console.log(arr[i]);
+        if (arr[i] % 2 !== 0) {
+          min.push(arr[i]);
+          sum += arr[i];
+        }
+      }
+      let minValue = Math.min(...min);
+      console.log('홀수의 합 : ' + sum);
+      console.log('홀수들 중 최솟값: ' + minValue);
+    </script>
+  </body>
+</html>
